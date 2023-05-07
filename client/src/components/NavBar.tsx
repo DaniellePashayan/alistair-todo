@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Flex,
   Grid,
@@ -10,7 +9,6 @@ import {
   Link,
   Show,
   Spacer,
-  Text,
 } from "@chakra-ui/react";
 import Logo from "../assets/Icon.png";
 
@@ -21,32 +19,48 @@ const NavBar = () => {
       alignItems={"center"}
       gap="2"
       bg="pblue.900"
-      h={{ sm: "50px", md: "75px", lg: "100px" }}
+      h={{ base: "40px" }}
     >
+      {/* Left Side Navbar */}
       <HStack>
-        <Image boxSize={{sm: '0px', md: '40px', lg:'60px'}} src={Logo} />
-        <Link
-          as="b"
-          fontSize={{ sm: "20px", md: "35px", lg: "50px" }}
-          color="sgray.100"
-        >
+        <Image boxSize={{ base: "0px" }} src={Logo} />
+        <Link as="b" fontSize={{ sm: "20px" }} color="sgray.100">
           {" "}
           Alistair | To Do
         </Link>
       </HStack>
       <Spacer />
+      {/* Right side Navbar */}
       <Show below="md">
         <Flex mr={6} alignContent={"center"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="gray.900"
+            width="24"
+            height="24"
+            viewBox="0,0,256,256"
+            fill="#e6e6e6"
           >
-            <path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z" />
+            <g
+              fill="#e6e6e6"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+            >
+              <g transform="scale(10.66667,10.66667)">
+                <path d="M3,5c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h18c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,11c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h18c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,17c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h18c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path>
+              </g>
+            </g>
           </svg>
         </Flex>
       </Show>
