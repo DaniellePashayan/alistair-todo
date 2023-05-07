@@ -8,7 +8,7 @@ import {
   Box,
   Button,
 } from "@chakra-ui/react";
-import image from "./assets/Allistair-Method.jpg";
+import image from "../assets/Allistair-Method.jpg";
 
 const Content = () => {
   return (
@@ -24,7 +24,7 @@ const Content = () => {
             bgColor={"pblue.900"}
             color="sgray.100"
             fontWeight={"bold"}
-            h='50px'
+            h="50px"
           >
             Learn More
           </Button>

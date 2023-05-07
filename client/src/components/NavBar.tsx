@@ -9,7 +9,7 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import Logo from "./assets/Icon.png";
+import Logo from "../assets/Icon.png";
 
 const NavBar = () => {
   return (
