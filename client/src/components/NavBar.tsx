@@ -21,11 +21,15 @@ const NavBar = () => {
       alignItems={"center"}
       gap="2"
       bg="pblue.900"
-      h="100px"
+      h={{ sm: "50px", md: "75px", lg: "100px" }}
     >
       <HStack>
-        <Image boxSize={"75px"} src={Logo} />
-        <Link as="b" fontSize={"3xl"} color="sgray.100">
+        <Image boxSize={{sm: '0px', md: '40px', lg:'60px'}} src={Logo} />
+        <Link
+          as="b"
+          fontSize={{ sm: "20px", md: "35px", lg: "50px" }}
+          color="sgray.100"
+        >
           {" "}
           Alistair | To Do
         </Link>
