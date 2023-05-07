@@ -15,11 +15,11 @@ const Content = () => {
     <Center>
       <Flex my={10} w="60%" justifyContent={"center"} textAlign={"center"}>
         <VStack>
-          <Heading fontSize={{ sm: "xl", md: "2xl", lg: "3xl" }}>
+          <Heading fontSize={{ base: '28px' }}>
             Plan for success, once and for all
           </Heading>
           <Box pb="20px">
-            <Container fontSize={"xl"} h="50px">
+            <Container fontSize={{base:'17px'}} h="50px">
               Prioritize, organize, and simplify your tasks with ease.
             </Container>
           </Box>
@@ -35,7 +35,7 @@ const Content = () => {
           <Image
             src={image}
             opacity={"70%"}
-            boxSize={"400px"}
+            boxSize={{base: '250px'}}
             borderRadius={"30px"}
             boxShadow={" 0px 0px 250px 35px"}
           />
